@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std; 
 
-const double PI = 3.14159;
 const int MINCHOICE = 1;
 const int MAXCHOICE = 5; 
 void printMenu();
@@ -22,7 +21,7 @@ int main()
   {
     printMenu(); // prints out the Menu of choices	
     choice = getChoice(); // gets the user's choice 
-    switch (choice)
+    switch (choice)  //should have options for everthing from MIN_CHOICE to MAX_CHOICE
     {
       case 1:
         cout << "Goodbye";
@@ -61,8 +60,8 @@ void printMenu()
 
 /*
  * getChoice
- *   checks to see that user input is between MINCHOICE and MAXCHOICE or asks for another input
- *   returns a number between MINCHOICE and MAXCHOICE
+ *   checks to see that user input is between MIN_CHOICE and MAX_CHOICE or asks for another input
+ *   returns a number between MIN_CHOICE and MAX_CHOICE
  */
 int getChoice()
 {
